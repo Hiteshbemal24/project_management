@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Project Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'clients-list' %}">Clients</a></li>
+                <li><a href="{% url 'projects-list' %}">Projects</a></li>
+                <li><a href="{% url 'admin:index' %}">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This is a project management system where you can manage clients and projects efficiently.</p>
+        </section>
+        <section>
+            <h2>Get Started</h2>
+            <p>To get started, please log in or register an account.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Project Management System</p>
+    </footer>
+</body>
+</html>
